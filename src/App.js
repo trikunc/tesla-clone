@@ -14,6 +14,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { login, logout, selectUser } from "./features/userSlice";
 import { auth } from "./app/firebase";
 import Signup from "./components/Signup";
+import TeslaAccount from "./components/TeslaAccount";
 
 function App() {
   const user = useSelector(selectUser);
@@ -52,6 +53,19 @@ function App() {
           </Route>
           <Route exact path="/signup">
             <Signup />
+          </Route>
+          <Route exact path="/teslaaccount">
+            {!user ? (
+              <Redirect to="/login" />
+            ) : (
+              <>
+                <TeslaAccount
+                  isMenuOpen={isMenuOpen}
+                  setIsMenuOpen={setIsMenuOpen}
+                />
+                {isMenuOpen && <Menu />}
+              </>
+            )}
           </Route>
         </Switch>
       </div>
