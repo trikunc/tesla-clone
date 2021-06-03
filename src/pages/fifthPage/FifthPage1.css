@@ -1,0 +1,27 @@
+.flex {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  /* background-color: white; */
+}
+
+.FifthPage1__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: yellow; */
+}
+
+.FifthPage1__imageContainer {
+  top: -10px;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  background-color: red;
+}
+
+.FifthPage1__image {
+  width: 100%;
+  height: 100%;
+}

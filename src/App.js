@@ -17,12 +17,16 @@ import TeslaAccount from "./components/TeslaAccount";
 
 import image1 from "./assets/img/Picture1.jpg";
 import image2 from "./assets/img/Picture2.jpg";
-import image3 from "./assets/img/Picture3.png";
+import image3 from "./assets/img/Picture3.jpg";
 import image4 from "./assets/img/Picture4.jpg";
 import Page1 from "./pages/landingPage/Page1";
 import Page2 from "./pages/landingPage/Page2";
 import Page3 from "./pages/landingPage/Page3";
 import Page4 from "./pages/landingPage/Page4";
+import SecondPage1 from "./pages/secondPage/SecondPage1";
+import ThirdPage1 from "./pages/thirdPage/ThirdPage1";
+import FifthPage1 from "./pages/fifthPage/FifthPage1";
+import Item from "./components/Item";
 
 function App() {
   const user = useSelector(selectUser);
@@ -54,10 +58,60 @@ function App() {
           <Route exact path="/">
             <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
             {isMenuOpen && <Menu />}
-            <Page1 background={image1} />
+            <div className="app__itemsContainer">
+              <Item
+                title="Internet of Things"
+                desc="Do you believe that everything can be done easily? We believe, and
+                we create it."
+                descLink=""
+                backgroundImg={image1}
+                leftBtnTxt="ORDER NOW"
+                leftBtnLink=""
+                rightBtnTxt="FIND OUT MORE"
+                rightBtnLink=""
+                first
+              />
+              <Item
+                title="Digitalization"
+                desc="Digital transformation? not just a discourse, see what we can do for
+                you."
+                descLink=""
+                backgroundImg={image2}
+                leftBtnTxt="CUSTOM ORDER"
+                leftBtnLink=""
+                rightBtnTxt="FIND OUT MORE"
+                rightBtnLink=""
+              />
+              <Item
+                title="Business Platform"
+                desc="Everyone deserves a solution, and we're trying to help solve it."
+                descLink=""
+                backgroundImg={image3}
+                leftBtnTxt="CUSTOM ORDER"
+                leftBtnLink=""
+                rightBtnTxt="LEARN MORE"
+                rightBtnLink=""
+              />
+              <Item
+                title="Support Services"
+                desc="Need technical specialist team to help your business? We initially
+                focused on that support service."
+                descLink=""
+                backgroundImg={image4}
+                leftBtnTxt="SHOP NOW"
+                leftBtnLink=""
+                rightBtnTxt="LEARN MORE"
+                rightBtnLink=""
+              />
+            </div>
+
+            {/* <Page1 background={image1} />
             <Page2 background={image2} />
-            <Page2 background={image3} />
-            <Page2 background={image4} />
+            <Page3 background={image3} />
+            <Page4 background={image4} />
+            <SecondPage1 />
+            <ThirdPage1 />
+            <FifthPage1 /> */}
           </Route>
           <Route path="/login">
             {user ? <Redirect to="/teslaaccount" /> : <Login />}
@@ -77,6 +131,16 @@ function App() {
                 {isMenuOpen && <Menu />}
               </>
             )}
+          </Route>
+
+          <Route exact path="/iot">
+            <SecondPage1 />
+          </Route>
+          <Route exact path="/digitalization">
+            <ThirdPage1 />
+          </Route>
+          <Route exact path="/business-platform">
+            <FifthPage1 />
           </Route>
         </Switch>
       </div>

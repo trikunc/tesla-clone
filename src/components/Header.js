@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 
+import sinergiImg from "../assets/img/Logo SMP White.png";
+
 function Header({ isMenuOpen, setIsMenuOpen }) {
   return (
     <div className="header">
@@ -11,20 +13,25 @@ function Header({ isMenuOpen, setIsMenuOpen }) {
         <Link to="/">
           <img
             className="header__logoImg"
-            src="https://assets.website-files.com/5e8fceb1c9af5c3915ec97a0/5ec2f037975ed372da9f6286_Tesla-Logo-PNG-HD.png"
+            // src="../assets/img/Logo SMP White.png"
+            src={sinergiImg}
             alt=""
           />
         </Link>
       </div>
       <div className="header__links">
-        <Link to="/">Model S</Link>
-        <Link to="/">Model 3</Link>
-        <Link to="/">Model X</Link>
-        <Link to="/">Model Y</Link>
-        <Link to="/">Solar Roof</Link>
-        <Link to="/">Solar Panels</Link>
+        <Link to="/iot">Internet of Things</Link>
+        <Link to="/digitalization">Digitalization</Link>
+        <Link to="/business-platform">Business Platform</Link>
+        <Link to="/">Support Services</Link>
+        <div
+          className="header__menu"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          {isMenuOpen ? <CloseIcon /> : <MenuIcon style={{ color: "white" }} />}
+        </div>
       </div>
-      <div className="header__right">
+      {/* <div className="header__right">
         <Link to="/" className={isMenuOpen && "header__link--hidden"}>
           Shop
         </Link>
@@ -37,7 +44,7 @@ function Header({ isMenuOpen, setIsMenuOpen }) {
         >
           {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
