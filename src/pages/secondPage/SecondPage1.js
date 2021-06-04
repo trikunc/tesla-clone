@@ -2,7 +2,7 @@ import React from "react";
 import "./SecondPage1.css";
 
 import image1 from "../../assets/img/secondPage/Page 1/Picture1.jpg";
-import image2 from "../../assets/img/secondPage/Page 1/Picture2.jpg";
+import image2 from "../../assets/img/secondPage/Page 1/Picture2.jpeg";
 import image3 from "../../assets/img/secondPage/Page 1/Picture3.jpg";
 import image4 from "../../assets/img/secondPage/Page 1/Picture4.jpg";
 import image5 from "../../assets/img/secondPage/Page 1/Picture5.jpg";

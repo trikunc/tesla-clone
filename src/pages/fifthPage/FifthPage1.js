@@ -6,18 +6,29 @@ import image2 from "../../assets/img/Page5/Picture2.jpg";
 
 function FifthPage1() {
   return (
-    <div class="flex">
-      <div className="FifthPage1__content" style={{ backgroundColor: "red" }}>
+    <div class="container">
+      <div className="FifthPage1__content">
         <div className="FifthPage1__imageContainer">
           <img src={image1} className="FifthPage1__image" alt="pic1" />;
         </div>
-
-        <p>Test</p>
-        {/* <div className="FifthPage1__actions">
-          <button className="FifthPage1__button">Learn more</button>
-        </div> */}
+        <div className="FifthPage1__imageText">
+          <div className="test">
+            <p>Professional Services</p>
+            <button className="FifthPage1__button">Read more</button>
+          </div>
+        </div>
       </div>
-      <div>Test2</div>
+      <div className="FifthPage1__content">
+        <div className="FifthPage1__imageContainer">
+          <img src={image2} className="FifthPage1__image" alt="pic1" />;
+        </div>
+        <div className="FifthPage1__imageText">
+          <div className="test">
+            <p>Operation Services</p>
+            <button className="FifthPage1__button">Read more</button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

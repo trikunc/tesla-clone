@@ -1,11 +1,13 @@
 .container {
-  display: grid;
-  grid-template-columns: 7fr 5fr;
+  /* display: grid;
+  grid-template-columns: 1fr 2fr; */
+  display: flex;
   height: 100vh;
   background-color: #303952;
 }
 
 .secondPage1__imageContent {
+  width: 70vw;
   display: grid;
   grid-template-columns: 400px 400px;
   background-color: #fff;
@@ -44,6 +46,7 @@
 }
 
 .secondPage1__content {
+  width: 40vw;
   display: grid;
   grid-template-rows: 9fr 1fr 2fr;
 }
