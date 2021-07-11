@@ -1,10 +1,10 @@
 import React from "react";
 import "./ThirdPage1.css";
 
-import image1 from "../../assets/img/thirdPage/Picture1.jpg";
-import image2 from "../../assets/img/thirdPage/Picture2.jpg";
-import image3 from "../../assets/img/thirdPage/Picture3.jpg";
-import image4 from "../../assets/img/thirdPage/Picture4.png";
+// import image1 from "../../assets/img/thirdPage/Picture1.jpg";
+// import image2 from "../../assets/img/thirdPage/Picture2.jpg";
+// import image3 from "../../assets/img/thirdPage/Picture3.jpg";
+// import image4 from "../../assets/img/thirdPage/Picture4.png";
 
 function ThirdPage1() {
   return (
