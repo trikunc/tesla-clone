@@ -15,14 +15,14 @@ import { auth } from "./app/firebase";
 import Signup from "./components/Signup";
 import TeslaAccount from "./components/TeslaAccount";
 
-import image1 from "./assets/img/Picture1.jpg";
-import image2 from "./assets/img/Picture2.jpg";
-import image3 from "./assets/img/Picture3.jpg";
-import image4 from "./assets/img/Picture4.jpg";
-import Page1 from "./pages/landingPage/Page1";
-import Page2 from "./pages/landingPage/Page2";
-import Page3 from "./pages/landingPage/Page3";
-import Page4 from "./pages/landingPage/Page4";
+import image1 from "./assets/img/mainPage/IOT.jpg";
+import image2 from "./assets/img/mainPage/Digitalization.jpg";
+import image3 from "./assets/img/mainPage/BusinessPlatform.jpg";
+import image4 from "./assets/img/mainPage/SecurityService.jpg";
+// import Page1 from "./pages/landingPage/Page1";
+// import Page2 from "./pages/landingPage/Page2";
+// import Page3 from "./pages/landingPage/Page3";
+// import Page4 from "./pages/landingPage/Page4";
 import SecondPage1 from "./pages/secondPage/SecondPage1";
 import ThirdPage1 from "./pages/thirdPage/ThirdPage1";
 import FifthPage1 from "./pages/fifthPage/FifthPage1";
@@ -112,8 +112,8 @@ function App() {
             <SecondPage1 />
             <ThirdPage1 />
             <FifthPage1 /> */}
-          </Route>
-          <Route path="/login">
+          </      Route>
+          < Route path="/login">
             {user ? <Redirect to="/teslaaccount" /> : <Login />}
           </Route>
           <Route exact path="/signup">
@@ -139,7 +139,7 @@ function App() {
           <Route exact path="/digitalization">
             <ThirdPage1 />
           </Route>
-          <Route exact path="/business-platform">
+          <Route exact path="/support-service">
             <FifthPage1 />
           </Route>
         </Switch>
