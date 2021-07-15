@@ -9,7 +9,7 @@ function FifthPage1() {
     <div class="container">
       <div className="FifthPage1__content">
         <div className="FifthPage1__imageContainer">
-          <img src={image1} className="FifthPage1__image" alt="pic1" />;
+          <img src={image1} className="FifthPage1__image" alt="pic1" />
         </div>
         <div className="FifthPage1__imageText">
           <div className="test">
@@ -20,7 +20,7 @@ function FifthPage1() {
       </div>
       <div className="FifthPage1__content">
         <div className="FifthPage1__imageContainer">
-          <img src={image2} className="FifthPage1__image" alt="pic1" />;
+          <img src={image2} className="FifthPage1__image" alt="pic1" />
         </div>
         <div className="FifthPage1__imageText">
           <div className="test">

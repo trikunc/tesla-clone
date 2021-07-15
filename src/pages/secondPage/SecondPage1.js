@@ -13,22 +13,22 @@ function SecondPage1() {
     <div className="container">
       <div className="secondPage1__imageContent">
         <div className="secondPage1__imageBorder">
-          <img src={image1} className="secondPage1__image" alt="pic1" />;
+          <img src={image1} className="secondPage1__image" alt="pic1" />
         </div>
         <div className="secondPage1__imageBorder">
-          <img src={image2} className="secondPage1__image" alt="pic2" />;
+          <img src={image2} className="secondPage1__image" alt="pic2" />
         </div>
         <div className="secondPage1__imageBorder">
-          <img src={image3} className="secondPage1__image" alt="pic3" />;
+          <img src={image3} className="secondPage1__image" alt="pic3" />
         </div>
         <div className="secondPage1__imageBorder">
-          <img src={image4} className="secondPage1__image" alt="pic4" />;
+          <img src={image4} className="secondPage1__image" alt="pic4" />
         </div>
         <div className="secondPage1__imageBorder">
-          <img src={image5} className="secondPage1__image" alt="pic5" />;
+          <img src={image5} className="secondPage1__image" alt="pic5" />
         </div>
         <div className="secondPage1__imageBorder">
-          <img src={image6} className="secondPage1__image" alt="pic6" />;
+          <img src={image6} className="secondPage1__image" alt="pic6" />
         </div>
       </div>
       <div className="secondPage1__content">

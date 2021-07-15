@@ -26,6 +26,8 @@ import image4 from "./assets/img/mainPage/SecurityService.jpg";
 import SecondPage1 from "./pages/secondPage/SecondPage1";
 import ThirdPage1 from "./pages/thirdPage/ThirdPage1";
 import FifthPage1 from "./pages/fifthPage/FifthPage1";
+import FifthPage2 from "./pages/fifthPage/FifthPage2";
+import FifthPage3 from "./pages/fifthPage/FifthPage3";
 import Item from "./components/Item";
 
 function App() {
@@ -68,7 +70,7 @@ function App() {
                 leftBtnTxt="ORDER NOW"
                 leftBtnLink=""
                 rightBtnTxt="FIND OUT MORE"
-                rightBtnLink=""
+                rightBtnLink="/iot"
                 first
               />
               <Item
@@ -80,7 +82,7 @@ function App() {
                 leftBtnTxt="CUSTOM ORDER"
                 leftBtnLink=""
                 rightBtnTxt="FIND OUT MORE"
-                rightBtnLink=""
+                rightBtnLink="/digitalization"
               />
               <Item
                 title="Business Platform"
@@ -101,7 +103,7 @@ function App() {
                 leftBtnTxt="SHOP NOW"
                 leftBtnLink=""
                 rightBtnTxt="LEARN MORE"
-                rightBtnLink=""
+                rightBtnLink="/support-service"
               />
             </div>
 
@@ -112,8 +114,8 @@ function App() {
             <SecondPage1 />
             <ThirdPage1 />
             <FifthPage1 /> */}
-          </      Route>
-          < Route path="/login">
+          </Route>
+          <Route path="/login">
             {user ? <Redirect to="/teslaaccount" /> : <Login />}
           </Route>
           <Route exact path="/signup">
@@ -141,6 +143,8 @@ function App() {
           </Route>
           <Route exact path="/support-service">
             <FifthPage1 />
+            <FifthPage2 />
+            <FifthPage3 />
           </Route>
         </Switch>
       </div>
