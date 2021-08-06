@@ -23,7 +23,7 @@ function Header({ isMenuOpen, setIsMenuOpen }) {
         <Link to="/iot">Internet of Things</Link>
         <Link to="/digitalization">Digitalization</Link>
         <Link to="/">Business Platform</Link>
-        <Link to="/support-service">Support Services</Link>
+        <Link to="/support-service">Professional Services</Link>
         <div
           className="header__menu"
           onClick={() => setIsMenuOpen(!isMenuOpen)}

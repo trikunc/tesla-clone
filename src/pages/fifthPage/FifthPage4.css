@@ -1,0 +1,49 @@
+.FifthPage4__Container {
+  margin: 100px 200px;
+  display: flex;
+  flex-direction: column;
+
+  /* background-color: yellow; */
+}
+
+.FifthPage4__Title,
+.FifthPage4__Text {
+  background-color: red;
+  color: white;
+  width: 40%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.FifthPage4__Brand {
+  margin-top: 150px;
+  padding: 20px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+
+.FifthPage4__img {
+  height: 50px;
+}
+
+.FifthPage4__ButtonContainer {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.FifthPage4__button {
+  cursor: pointer;
+  border: none;
+  width: 150px;
+  margin: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+  font-weight: 600;
+  outline: none;
+  background-color: red;
+  color: white;
+  border-radius: 8px;
+}

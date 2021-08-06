@@ -29,6 +29,9 @@ import FifthPage1 from "./pages/fifthPage/FifthPage1";
 import FifthPage2 from "./pages/fifthPage/FifthPage2";
 import FifthPage3 from "./pages/fifthPage/FifthPage3";
 import Item from "./components/Item";
+import Item2 from "./components/Item2";
+import FifthPage4 from "./pages/fifthPage/FifthPage4";
+import FourthPage1 from "./pages/forthPage/FourthPage1";
 
 function App() {
   const user = useSelector(selectUser);
@@ -61,7 +64,7 @@ function App() {
             <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
             {isMenuOpen && <Menu />}
             <div className="app__itemsContainer">
-              <Item
+              <Item2
                 title="Internet of Things"
                 desc="Do you believe that everything can be done easily? We believe, and
                 we create it."
@@ -71,9 +74,10 @@ function App() {
                 leftBtnLink=""
                 rightBtnTxt="FIND OUT MORE"
                 rightBtnLink="/iot"
-                first
+                // first
+                itemPosition="item__right"
               />
-              <Item
+              <Item2
                 title="Digitalization"
                 desc="Digital transformation? not just a discourse, see what we can do for
                 you."
@@ -83,8 +87,9 @@ function App() {
                 leftBtnLink=""
                 rightBtnTxt="FIND OUT MORE"
                 rightBtnLink="/digitalization"
+                itemPosition="item__left"
               />
-              <Item
+              <Item2
                 title="Business Platform"
                 desc="Everyone deserves a solution, and we're trying to help solve it."
                 descLink=""
@@ -92,10 +97,11 @@ function App() {
                 leftBtnTxt="CUSTOM ORDER"
                 leftBtnLink=""
                 rightBtnTxt="LEARN MORE"
-                rightBtnLink=""
+                rightBtnLink="/business-platform"
+                itemPosition="item__center"
               />
-              <Item
-                title="Support Services"
+              <Item2
+                title="Professional Services"
                 desc="Need technical specialist team to help your business? We initially
                 focused on that support service."
                 descLink=""
@@ -104,6 +110,7 @@ function App() {
                 leftBtnLink=""
                 rightBtnTxt="LEARN MORE"
                 rightBtnLink="/support-service"
+                itemPosition="item__center"
               />
             </div>
 
@@ -141,10 +148,14 @@ function App() {
           <Route exact path="/digitalization">
             <ThirdPage1 />
           </Route>
+          <Route exact path="/business-platform">
+            <FourthPage1 />
+          </Route>
           <Route exact path="/support-service">
             <FifthPage1 />
             <FifthPage2 />
             <FifthPage3 />
+            <FifthPage4 />
           </Route>
         </Switch>
       </div>

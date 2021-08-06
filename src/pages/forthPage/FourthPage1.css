@@ -1,0 +1,50 @@
+.FourthPage1__Container{
+  height: 100vh;
+}
+
+.FourthPage1__Top {
+  height: 40vh;
+}
+
+.FourthPage1__img {
+  height: 80%;
+  overflow: hidden;
+  /* background-repeat: no-repeat; */
+}
+
+.FourthPage1__img > img {
+  overflow: hidden;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+  /* background-position: center center; */
+}
+
+.FourthPage1__Bottom {
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.FourthPage1__Left {
+  width: 50%;
+  padding: 50px 30px;
+
+}
+.FourthPage1__Right {
+  width: 50%;
+  margin: 50px 0;
+  padding: 50px;
+  background-color: pink;
+}
+
+.FourthPage1__Left > h1 {
+  color: red;
+  font-size: 80px;
+  font-weight: 900;
+}
+
+.FourthPage1__Right > h2 {
+  color: white;
+
+}
