@@ -28,7 +28,6 @@ import ThirdPage1 from "./pages/thirdPage/ThirdPage1";
 import FifthPage1 from "./pages/fifthPage/FifthPage1";
 import FifthPage2 from "./pages/fifthPage/FifthPage2";
 import FifthPage3 from "./pages/fifthPage/FifthPage3";
-import Item from "./components/Item";
 import Item2 from "./components/Item2";
 import FifthPage4 from "./pages/fifthPage/FifthPage4";
 import FourthPage1 from "./pages/forthPage/FourthPage1";
